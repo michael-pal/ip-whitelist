@@ -35,7 +35,7 @@ public class IPWhitelistControllerImpl implements IIPWhitelistController{
 		return ipWhitelistServiceImpl.insertUpdateIPWhitelist(request);
 	}
 
-	@GetMapping(value = "/api/v1/ip-whitelist/fetch")
+	@GetMapping(value = "/api/v1/ip-whitelist/whitelists")
 	@Override
 	public List<IpWhitelist> getIPWhitelist(@RequestBody Whitelists request) {
 		return ipWhitelistServiceImpl.fetchIPWhitelist(request);
